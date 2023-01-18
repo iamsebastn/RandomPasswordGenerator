@@ -23,6 +23,7 @@ function randomPassword() {
     for(let i = 0; i < lengthSlider.value; i++) {
         let randomLeft = Math.floor(Math.random() * characters.length)
         let randomRight = Math.floor(Math.random() * characters.length)
+        
         inputLeft.textContent += characters[randomLeft]
         inputRight.textContent += characters[randomRight]
     }
