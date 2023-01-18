@@ -50,6 +50,12 @@ html, body {
     gap: 0.75em;
 }
 
+.button-wr {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .input-slider {
     display: flex;
     align-items: center;
@@ -82,6 +88,10 @@ html, body {
 
     background: #273549;
     border-radius: 6px;
+}
+
+.hide-img_wr {
+    width: 1.75em;
 }
 
 /* ==========
@@ -133,12 +143,12 @@ p {
     color: #5DEF92;
 }
 
-.fa-regular {
-    color: #5DEF92;
-}
-
 .copy-svg {
     color: #10B981;
+}
+
+.active {
+    color: #10B981
 }
 
 /* ==========
@@ -163,6 +173,13 @@ BUTTONS
     border-radius: 0.375em;
 
     cursor: pointer;
+}
+
+.hide-btn {
+    padding: 0.15em;
+
+    background: transparent;
+    border: none;
 }
 
 .slider {

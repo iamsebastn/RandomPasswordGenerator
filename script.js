@@ -65,3 +65,8 @@ function copyRightPassword() {
 //     }
 // })
 
+const hideBtn = document.getElementById("hide-pw")
+hideBtn.addEventListener("click", () => {
+    document.querySelectorAll(".op-txt").style.webkitFilter = "blur(10px)"
+})
+
