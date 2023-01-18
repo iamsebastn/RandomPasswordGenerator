@@ -10,6 +10,8 @@ lengthSlider.addEventListener("input", (e) => {
 })
 
 document.querySelector(".pw-btn").addEventListener("click", randomPassword)
+document.querySelector("#copy-left_btn").addEventListener("click", copyLeftPassword)
+document.querySelector("#copy-right_btn").addEventListener("click", copyRightPassword)
 
 function randomPassword() {
     let inputLeft = document.querySelector("#input-left")
@@ -25,4 +27,40 @@ function randomPassword() {
         inputRight.textContent += characters[randomRight]
     }
 }
+
+function copyLeftPassword() {
+    let toCopy = document.querySelector("#input-left").textContent
+    let inputElement = document.createElement("input")
+
+    document.body.appendChild(inputElement)
+    inputElement.setAttribute("value", toCopy)
+    inputElement.select()
+    document.execCommand("copy")
+    
+    inputElement.parentNode.removeChild(inputElement)
+    alert("The left password has been copied")
+}
+
+function copyRightPassword() {
+    let toCopy = document.querySelector("#input-right").textContent
+    let inputElement = document.createElement("input")
+
+    document.body.appendChild(inputElement)
+    inputElement.setAttribute("value", toCopy)
+    inputElement.select()
+    document.execCommand("copy")
+
+    inputElement.parentNode.removeChild(inputElement)
+    alert("The right password has been copied")
+}
+
+// document.addEventListener("click", (e) => {
+//     if(e.target.dataset.side === "left") {
+//         console.log("left Test")
+//     } else if (e.target.dataset.side === "right") {
+//         console.log("Right test")
+//     } else {
+//         console.log("Nothing to click")
+//     }
+// })
 
