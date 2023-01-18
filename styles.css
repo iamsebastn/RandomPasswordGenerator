@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+
+    display: grid;
+    
+    margin: 0;
+    padding: 0;
+    
+    background: #1C1C1C;
+    color: #2B283A;
+}
+
+/* ==========
+    DIV's
+========== */
+
+.page-content {
+    width: 34.375em;
+    height: 34.375em;
+    
+    margin: auto;
+    padding: 7.1875em 3.25em;
+    
+    background: #ECFDF5;
+}
+
+.headline-wr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+    margin-bottom: 3.1875em;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 2.1875em 0;
+
+    background: #D5D4D8;
+}
+
+.op-wr {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.op-field {
+    width: 13.1875em;
+    height: 2.4375em;
+
+    background: #273549;
+    border-radius: 6px;
+}
+
+/* ==========
+TYPEFACES
+========== */
+
+h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5em;
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+}
+
+.t-color {
+    color: #10B981;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.4;
+
+    color: #6B7280;
+}
+
+.op-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+
+    color: #5DEF92;
+}
+
+/* ==========
+BUTTONS
+========== */
+
+.pw-btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    padding: 0.5625em 1.0625em 0.5625em 0.9375em;
+    
+    color: #FFFFFF;
+    background: #10B981;
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+    border: none;
+    border-radius: 0.375em;
+
+    cursor: pointer;
+}
