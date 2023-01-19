@@ -15,12 +15,12 @@
         </section>
         <section class="interaction-wr">
             <div class="input-slider">
-                <input type="range" class="slider" id="pw-length" name="length" min="1" max="15" >
+                <input type="range" class="slider" id="pw-length" name="length" min="5" max="20" >
                 <p class="slider-txt">Length: <output id="value-length"></output></p>
             </div>
             <div class="button-wr">
                 <button class="pw-btn">Generate passwords</button>
-                <button class="hide-btn" id="hide-pw">
+                <button class="hide-btn" id="hide-pw" data-side="hide">
                     <div class="hide-img_wr">
                         <img class="hide-svg" src="images/hide.svg">
                     </div>
@@ -29,17 +29,17 @@
         </section>
         <div class="divider"></div>
         <section class="op-wr">
-            <div class="op-field">
-                <p id="input-left" class="op-txt"></p>
-                <button class="copy-btn" id="copy-left_btn" data-side="left">
-                    <img class="copy-svg" src="images/copy.svg">
-                </button>
+            <div class="op-item">
+                <div class="op-field">
+                    <p id="input-left" class="op-txt"></p>
+                </div>
+                <button class="copy-btn" id="copy-left_btn" data-side="left">Copy password</button>
             </div>
-            <div class="op-field">
-                <p id="input-right" class="op-txt"></p>
-                <button class="copy-btn" id="copy-right_btn" data-side="right">
-                    <img class="copy-svg" src="images/copy.svg">
-                </button>
+            <div class="op-item">
+                <div class="op-field">
+                    <p id="input-right" class="op-txt"></p>
+                </div>
+                <button class="copy-btn" id="copy-right_btn" data-side="right">Copy password</button>
             </div>
         </section>
     </main>
