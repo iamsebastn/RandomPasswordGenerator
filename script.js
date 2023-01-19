@@ -58,4 +58,3 @@ lengthSlider.addEventListener("input", (e) => {
 
 
 
-
